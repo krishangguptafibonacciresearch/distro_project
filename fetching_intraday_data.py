@@ -11,6 +11,8 @@ import shutil #deleting directories
 ### Step 2: Tickers and corresponding symbols
 dict_symbols = {
     "ZN=F":["ZN","10-Year T-Note Futures"],
+    "ZB=F":["ZB","30-Year T-Bond Futures"],
+    "ZT=F":["ZT","3-Year US T-Note Futures"],
     "DX-Y.NYB":["DXY","US Dollar Index"],
     "CL=F":["CL","Crude Oil futures"],
     "GC=F":["GC","Gold futures"],
