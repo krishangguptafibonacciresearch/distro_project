@@ -9,4 +9,4 @@ plot_urls = [
 
 st.header("Generated Plots")
 for url in plot_urls:
-    st.image(url, caption="Plot from OneDrive")
+    st.image(url, caption="My Plots")
