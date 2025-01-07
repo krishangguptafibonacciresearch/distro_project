@@ -13,7 +13,7 @@ branch='main'
 st.title("Live Plots with Persistent Links @ FR")
 
 plots_directory="delete"#"Intraday_data_files_stats_and_plots_folder"
-plot_url_base=f"https://raw.githubusercontent.com/krishangguptafibonacciresearch/{repo_name}/{branch}/{plots_directory}"
+plot_url_base=f"https://raw.githubusercontent.com/krishangguptafibonacciresearch/{repo_name}/{branch}/{plots_directory}/"
 
 plot_urls=[]
 intervals=[]
