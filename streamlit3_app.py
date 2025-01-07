@@ -3,7 +3,7 @@ import os
 
 st.set_page_config(
     page_title="FR Live Plots",
-    page_icon="📊",
+    page_icon="FR",
     layout="wide",
     initial_sidebar_state="expanded",
 )
