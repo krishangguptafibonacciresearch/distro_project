@@ -48,9 +48,9 @@ for plotfile in os.scandir(plots_directory):
 
 unique_intervals=set(intervals)
 unique_instruments=set(instruments)
-#st.sidebar.title("Settings")
-#st.sidebar.markdown("Use the selectors below to filter plots.")
-#st.sidebar.help("Select your preferred interval and instrument to view the corresponding plots.")
+st.sidebar.title("Settings")
+st.sidebar.markdown("Use the selectors below to filter plots.")
+st.sidebar.help("Select your preferred interval and instrument to view the corresponding plots.")
 
 x = st.sidebar.selectbox("Select Interval",unique_intervals)
 y= st.sidebar.selectbox("Select Instrument",unique_instruments)
@@ -65,11 +65,11 @@ if filtered_plots:
         caption = f"{plot['return_type'].replace('Returns', 'Returns Distribution').replace('Volatility', 'Volatility Distribution')}"
         st.write(plot['url'])
         st.image(plot['url'],caption=caption)
-    #     st.download_button(
-    #     label="Download Plot",
-    #     data=plot["url"],
-    #     file_name=f"{plot['instrument']}_{plot['interval']}.png",
-    #     mime="image/png"
-    # )
+        st.download_button(
+        label="Download Plot",
+        data=plot["url"],
+        file_name=f"{plot['instrument']}_{plot['interval']}.png",
+        mime="image/png"
+    )
 else:
     st.write("No plots found for the selected interval and instrument.")
